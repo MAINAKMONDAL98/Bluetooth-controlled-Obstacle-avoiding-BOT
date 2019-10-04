@@ -56,7 +56,7 @@ void loop()
   delay(250);
     if(cm>3){
       
-      if (data == '1') {
+      if (data == '1') {//as forward
       analogWrite(speedPinA, 155);
       digitalWrite(dir1PinA, LOW);
       digitalWrite(dir2PinA, HIGH);
@@ -64,7 +64,7 @@ void loop()
       digitalWrite(dir1PinB, LOW);
       digitalWrite(dir2PinB, HIGH);
     }
-    else if (data == '6') {
+    else if (data == '6') {//reverse
       analogWrite(speedPinA, 155);
       digitalWrite(dir1PinA, HIGH);
       digitalWrite(dir2PinA, LOW);
